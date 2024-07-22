@@ -22,6 +22,9 @@
 		},
 		"onpremsqlserver_properties_typeProperties_userName": {
 			"value": "mls"
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0721-174322-jsvfsjl1"
 		}
 	}
 }

@@ -31,6 +31,10 @@
 			"type": "string",
 			"defaultValue": "mls"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0721-174322-jsvfsjl1"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -75,6 +79,9 @@
 					},
 					"onpremsqlserver_properties_typeProperties_userName": {
 						"value": "[parameters('onpremsqlserver_properties_typeProperties_userName')]"
+					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},
