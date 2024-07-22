@@ -630,7 +630,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "USE gold_db\nGO\n\nCREATE OR ALTER PROC createSQLServerlessView_gold @viewName nvarchar(100)\nAS\nBEGIN\n\nDECLARE @statement VARCHAR(MAX)\n\n    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + 'AS\n        SELECT *\n        FROM\n            OPENROWSET(\n                BULK ''https://mlsdatalakegen2.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',\n                FORMAT = ''DELTA''\n            ) as [result]\n            '\n\nEXEC(@statement)\n\nEND\nGO",
+					"query": "USE gold_DB\nGO \n\nCREATE OR ALTER PROC CreateSQLServerlessView_gold @ViewName nvarchar(100)\nAS \nBEGIN \n\nDECLARE @statement VARCHAR(MAX)\n\n    SET @statement = N'CREATE OR ALTER VIEW ' + @ViewName + ' AS\n        SELECT *\n        FROM\n            OPENROWSET(\n                BULK ''https://msldatalakegen2.dfs.core.windows.net/gold/SalesLT/' + @ViewName + '/'',\n                FORMAT= ''DELTA''\n            ) as [result]\n    '\n\nEXEC (@statement)\n\nEND \nGO",
 					"metadata": {
 						"language": "sql"
 					},
