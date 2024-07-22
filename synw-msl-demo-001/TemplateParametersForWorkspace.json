@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synw-msl-demo-001"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"synw-msl-demo-001-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synw-msl-demo-001.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://msldatalakegen2.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://kv-msl-demo-001.vault.azure.net/"
+		},
+		"onpremsqlserver_properties_typeProperties_server": {
+			"value": "LAPTOP-IEIGBKPU"
+		},
+		"onpremsqlserver_properties_typeProperties_database": {
+			"value": "AdventureWorksLT2022"
+		},
+		"onpremsqlserver_properties_typeProperties_userName": {
+			"value": "mls"
+		},
+		"serverlessSQLdb_properties_typeProperties_server": {
+			"value": "synw-msl-demo-001-ondemand.sql.azuresynapse.net"
+		},
+		"serverlessSQLdb_properties_typeProperties_database": {
+			"value": "gold_db"
+		},
+		"synw-msl-demo-001-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://msldatalakegen2.dfs.core.windows.net"
+		}
+	}
+}
