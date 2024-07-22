@@ -15,6 +15,10 @@
 			"type": "string",
 			"defaultValue": "https://msldatalakegen2.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0721-174322-jsvfsjl1"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://kv-msl-demo-001.vault.azure.net/"
@@ -30,10 +34,6 @@
 		"onpremsqlserver_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "mls"
-		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"type": "string",
-			"defaultValue": "0721-174322-jsvfsjl1"
 		},
 		"containerUri": {
 			"type": "string",
@@ -71,6 +71,9 @@
 					"AzureKeyVault1_properties_typeProperties_baseUrl": {
 						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
 					},
+					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
+					},
 					"onpremsqlserver_properties_typeProperties_server": {
 						"value": "[parameters('onpremsqlserver_properties_typeProperties_server')]"
 					},
@@ -79,9 +82,6 @@
 					},
 					"onpremsqlserver_properties_typeProperties_userName": {
 						"value": "[parameters('onpremsqlserver_properties_typeProperties_userName')]"
-					},
-					"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('AzureDatabricks1_properties_typeProperties_existingClusterId')]"
 					}
 				}
 			},

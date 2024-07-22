@@ -11,6 +11,9 @@
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://msldatalakegen2.dfs.core.windows.net/"
 		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "0721-174322-jsvfsjl1"
+		},
 		"AzureKeyVault1_properties_typeProperties_baseUrl": {
 			"value": "https://kv-msl-demo-001.vault.azure.net/"
 		},
@@ -22,9 +25,6 @@
 		},
 		"onpremsqlserver_properties_typeProperties_userName": {
 			"value": "mls"
-		},
-		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
-			"value": "0721-174322-jsvfsjl1"
 		}
 	}
 }
